@@ -1,5 +1,4 @@
 clc
-clear
 driver_force = 500;
 pedal_ratio = 5;
 brake_bias = 0.55;
@@ -34,7 +33,7 @@ fprintf('Força atrito Dianteira em N: %.2f\n', front_friction_force);
 fprintf('Força atrito Traseira em N: %.2f\n', rear_friction_force);
 
 front_effective_radius = 0.115; % Raio efetivo em metros
-brake_factor = 0.8; % Fator de frenagem
+brake_factor = 0.8; % Fator de frenagem-
 front_disk_torque = front_effective_radius*front_friction_force*brake_factor; % Torque disco dianteiro
 fprintf('Torque disco dianteiro: %.2f\n', front_disk_torque);
 fprintf('Torque no eixo dianteiro: %.2f\n', 2 * front_disk_torque);
